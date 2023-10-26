@@ -1,3 +1,4 @@
+
 These are the process
  1 Data 
 Acquisition&
@@ -8,3 +9,12 @@ Detection
 Extraction
  4 Load 
 Identification
+
+# NILM
+ main
+
+hello
+
+hello world
+hiiiiiiiiiiiiii main
+ main
