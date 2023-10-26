@@ -1,4 +1,4 @@
-
+These are the process
  1 Data 
 Acquisition&
 Preprocessing 
