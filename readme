@@ -1,0 +1,20 @@
+# Project NILM 
+Nonintrusive Load Monitoring, nonintrusive appliance load monitoring (NIALM), or energy disaggregation is a process for analyzing changes in the voltage and current going into a house and deducing what appliances are used in the house as well as their individual energy consumption.
+
+# Contains
+Documents - all research papers and link regarding NILM project 
+Data_files - csv and parquet files used in this project
+Code - pipelines and code
+
+# data ingestion
+- csv file reeading to pandas DataFrames (12 files [2 mains and 10 appliances]).
+- timestamp conversionn from unix to general yyyy/mm/dd hh:mm:ss .
+- pandas DataFrame to parquet file  ( mains + appliances with complete data ).
+- reading parquet files of 4 appliances (fridge, ac, washing machine, tv).
+- timeframe for all appliances 2023/06/12 to 2023/06/21 (or 2023/08/04).
+- #(optional) perticular timeframed data into parquet file.
+
+# cleaning and validation
+- null value check, total count of data, special characters check, duplicates.
+- active power is greator than apparent power that why for active power we used voltage*current*PF.
+- validation order frequency -> current -> pf -> voltage -> active > aparent -> power =  voltage*current*PF.
