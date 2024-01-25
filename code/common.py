@@ -41,4 +41,5 @@ def create_features(hourly_data):
     hourly_data['day'] = hourly_data.index.day
     hourly_data['dayofweek'] = hourly_data.index.dayofweek
     hourly_data['weekofyear'] = hourly_data.index.isocalendar().week
+    hourly_data['month'] = hourly_data.index.month
     return hourly_data

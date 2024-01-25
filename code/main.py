@@ -9,7 +9,7 @@ def NILM():
     print("data read done")
     """ data ingestion done """
 
-    """ data validation and transformation """
+    """ data transformation """
     complete_data_lst = [] # empty list to store final data set of all appliances
     for i in range(len(lst)):
         df = pd.read_parquet(f"{path}{lst[i]}.parquet")
@@ -21,9 +21,6 @@ def NILM():
         # df.drop(df[(df['current']>20) |(df['current']<0.07)].index, inplace=True)
         df.drop(df[df['voltage']<140].index, inplace=True)
         
-        """ data validation done """
-
-        """ data transformation """
         # power is active power derived from voltage current and pf
         df['power'] = (df['voltage'] * df['current'] * df['PF']).round(2)
         
