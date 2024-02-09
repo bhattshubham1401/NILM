@@ -4,7 +4,7 @@ import numpy as np
 def NILM():
     """ data ingestion """
 
-    lst = ['wm',"ac1",'ac2',"f",'tv']
+    lst = ['wm',"ac","f",'tv']
     path = "d:/NILM/Data_files/Parquet/Appliances12_06_04_08/"
     print("data read done")
     """ data ingestion done """
