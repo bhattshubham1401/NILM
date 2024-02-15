@@ -1,5 +1,3 @@
-# NILM
-hello
-changes done by amit
-kr diye hain changes
-idea nahi hai iska hame
+Data ingestion--> Data validation --> Data transformation --> Feature Extraction--> Model building --> Training and Evaluating 
+
+In progress...
